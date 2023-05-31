@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/lblCalculadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Calculadora"
+                android:textSize="25dp"
+                android:textColor="#1976D2" />
+
+            <TextView
+                android:id="@+id/lblUsuario"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Usuario:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/inputUser"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su nombre de usuario"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/lblContraseña"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Contraseña:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/inputPass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su contraseña"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión"
+                android:textColor="#000000"
+                android:background="#1976D2"
+                android:stateListAnimator="@anim/button_anim" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="150dp"
+                android:text="Salir"
+                android:textColor="#000000"
+                android:background="#1976D2"
+                android:stateListAnimator="@anim/button_anim" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
